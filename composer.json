@@ -1,12 +1,12 @@
 {
-  "name": "jajouka/sage-twig-jonnycole",
-  "description": "Starter theme - mix of Sage and Timber theme",
+  "name": "jajouka/sage-timber-jonnycole",
+  "description": "SSage and Timber theme for Jonny Cole site",
   "type":"wordpress-theme",
   "minimum-stability" : "stable",
   "authors": [
       {
-          "name": "Vincent Kranenodnk",
-          "email": "kranendonk.vincent@gmail.com"
+          "name": "Simon Beasley",
+          "email": "simon.beasley@neveryoumind.com"
       }
   ],
   "extra": {
