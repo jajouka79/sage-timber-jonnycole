@@ -1,0 +1,28 @@
+{% extends "templates/base.twig" %}
+
+{% block content %}
+
+	<h1>{{title}}</h1>
+
+    {% for video in videos %}
+
+		<div class="row video-title">
+		    <div class="col-xs-12 col-centered">
+           		<h2>{{ video.title }}</h2>
+           	</div>
+        </div>
+
+		<div class="row video-display">
+		    <div class="col-xs-12 col-centered">
+		    	
+				<iframe width="640" height="390" src="https://www.youtube.com/v/{{video.code}}" frameborder="0" allowfullscreen>
+				</iframe>
+
+		    </div>
+		</div>
+
+		<br><br>
+
+    {% endfor %}
+
+{% endblock %}
