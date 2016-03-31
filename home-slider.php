@@ -9,6 +9,7 @@ $args = array(
 );
 
 
+$slides = array();
 $slider_query = null;
 
 $slider_query = get_posts( $args );

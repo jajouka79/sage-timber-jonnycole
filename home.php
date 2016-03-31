@@ -15,6 +15,8 @@ $args = array(
 
 $query = get_posts( $args );
 
-$context['page'] = $query[0];
+if( ! empty ( $query ) ) :
+	$context['page'] = $query[0];
+endif;
 
 Timber::render('templates/home.twig', $context);
