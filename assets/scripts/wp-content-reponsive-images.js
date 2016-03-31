@@ -1,6 +1,6 @@
 (function($) {
 
-	console.log( 'wp-content-reponsive-images.js' );
+	//console.log( 'wp-content-reponsive-images.js' );
 
 	$('.content img').addClass('img-responsive');
 
