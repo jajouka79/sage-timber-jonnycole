@@ -246,7 +246,10 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 gulp.task('watch', function() {
   browserSync.init({
     files: ['{lib,templates}/**/*.php', '*.php', '{lib,templates}/**/*.twig', '*.twig'],
+    open: 'external',
+    host: config.devUrl,
     proxy: config.devUrl,
+    port: 3000,
     snippetOptions: {
       whitelist: ['/wp-admin/admin-ajax.php'],
       blacklist: ['/wp-admin/**']

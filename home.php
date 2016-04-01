@@ -20,5 +20,6 @@ if( ! empty ( $query ) ) :
 endif;
 
 echo "test";
+echo "test2";
 
 Timber::render('templates/home.twig', $context);
