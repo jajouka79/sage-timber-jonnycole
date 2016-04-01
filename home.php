@@ -19,4 +19,6 @@ if( ! empty ( $query ) ) :
 	$context['page'] = $query[0];
 endif;
 
+echo "test";
+
 Timber::render('templates/home.twig', $context);
