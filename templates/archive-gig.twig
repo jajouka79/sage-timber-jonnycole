@@ -1,0 +1,53 @@
+{% extends "templates/base.twig" %}
+
+{% block content %}
+
+  <h1>----------{{title}}</h1>
+<table wt-responsive-table class="responsive">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Version</th>
+                <th>Language</th>
+                <th>Maintainer</th>
+                <th>Stars</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-title="Name">AngularJS</td>
+                <td data-title="Version">1.5</td>
+                <td data-title="Language">JavaScript</td>
+                <td data-title="Maintainer">Google</td>
+                <td data-title="Stars">35000</td>
+            </tr>
+            <tr>
+                <td data-title="Name">Bootstrap</td>
+                <td data-title="Version">3.3</td>
+                <td data-title="Language">CSS</td>
+                <td data-title="Maintainer">Twitter</td>
+                <td data-title="Stars">23000</td>
+            </tr>
+            <tr>
+                <td data-title="Name">UI-Router</td>
+                <td data-title="Version">0.13</td>
+                <td data-title="Language">JavaScript</td>
+                <td data-title="Maintainer">AngularUI</td>
+                <td data-title="Stars">15000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    {% for post in posts %}
+
+
+        <div class="page-header">
+            <h2>xxxxxxxx - {{ post.title }}</h2>
+        </div>
+
+        {{ post.content }}
+
+    {% endfor %}
+
+{% endblock %}
