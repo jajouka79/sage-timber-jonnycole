@@ -7,14 +7,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "bootstrap-sass": "3.3.5",
     "modernizr": "~2.6.2",
     "FitVids": "1.1.0",
-    "angular-responsive-tables": "0.1.3"
-=======
+    "angular-responsive-tables": "0.1.3",
     "bootstrap-sass": "3.3.5"
->>>>>>> 187daf3feda1bb60cffb65b382e2a90c3159982d
   },
   "overrides": {
     "bootstrap-sass": {
